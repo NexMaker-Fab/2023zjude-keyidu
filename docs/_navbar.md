@@ -1,5 +1,5 @@
 * Find us
-  * [Github](https://github.com/qjln/qiu_doc)
+  * [Github](https://nexmaker-fab.github.io/2023zjude-keyidu/)
 
 
 * Useful links
