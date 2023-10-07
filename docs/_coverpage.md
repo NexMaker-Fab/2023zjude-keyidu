@@ -4,7 +4,7 @@
 
 # 设计工程学
 
-> All by keyidu👋
+> All by KEYIDU👋
 
 [开始学习](./README.md)
 
