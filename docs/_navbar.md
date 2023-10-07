@@ -1,5 +1,5 @@
 * Find us
-  * [Github](https://nexmaker-fab.github.io/2023zjude-keyidu/)
+  * [Github](https://github.com/NexMaker-Fab/2023zjude-keyidu)
 
 
 * Useful links
