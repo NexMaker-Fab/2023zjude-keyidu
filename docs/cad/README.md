@@ -5,16 +5,16 @@
 
 **Autodesk Fusion 360:**
 
-Use docsify to dynamically convert Markdown files to html files
+Use Autodesk Fusion360 to achieve modeling, assembly and simulation.
 
-Refer to tutorials and resources:
-
+Refer to tutorial and resource:
 https://www.youtube.com/watch?v=CGvCVKpWtB4&list=PLOnuAwx8d0-m3heu6Xkt_qpYsn_YbXy1P&index=2
 
 
 ## Overview
 
-Overview of output model effects
+Overview of output model effects.
+
 
 ## Process
 
@@ -45,7 +45,7 @@ Select join point.
 
 ![3.1](./img/7.png)
 
-#### **4. Connect the hollow cylindrical structure to achieve sliding**
+#### **4. Joint the hollow cylindrical structure to achieve sliding**
 
 Set movement direction and adjust position.
 
