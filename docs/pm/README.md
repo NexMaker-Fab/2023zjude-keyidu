@@ -105,7 +105,9 @@ There are four official themes that only need to be introduced in index to be us
 
 In the early stage, the sidebar page could not jump due to the editing error of the level. After understanding the relationship between the relative levels, I corrected it.
 
+
 ![3.1](./img/4.png)
+
 2.Picture problem:
 The image cannot be loaded because the local image file address is directly added. After referring to the structure of other people's works, re-establish the picture management folder and change the picture address.
 

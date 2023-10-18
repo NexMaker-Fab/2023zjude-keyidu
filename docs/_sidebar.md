@@ -6,7 +6,8 @@
 - ✔Daily homework
     - [1. PM]
         - [How to build web](pm/)
-    - [2. CAD]()
+    - [2. CAD]
+        - [How to build CAD model](cad/)
     - [3. Arduino]()
 - ✔Final project
     - [Description](final%20project/description.md)
