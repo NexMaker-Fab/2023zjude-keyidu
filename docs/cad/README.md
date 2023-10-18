@@ -6,7 +6,6 @@
 **Autodesk Fusion 360:**
 
 Use Autodesk Fusion360 to achieve modeling, assembly and simulation.
-
 Refer to tutorial and resource:
 https://www.youtube.com/watch?v=CGvCVKpWtB4&list=PLOnuAwx8d0-m3heu6Xkt_qpYsn_YbXy1P&index=2
 
