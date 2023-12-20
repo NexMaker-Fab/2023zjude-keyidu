@@ -8,7 +8,8 @@
         - [How to build web](pm/)
     - [2. CAD]
         - [How to build CAD model](cad/)
-    - [3. Arduino]()
+    - [3. Arduino]
+        - [How to build a light experiment](arduino/)
 - ✔Final project
     - [Description](final%20project/description.md)
     - [How to design](final%20project/how%20to%20design.md) 

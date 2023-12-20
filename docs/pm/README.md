@@ -91,9 +91,25 @@ There are four official themes that only need to be introduced in index to be us
 
 ![5.1](./img/8.png)
 
-### **Github project creation and deployment**
+#### **Local setting**
+
+1.Download the github client and register
+
+2.Try to find the repository on the client and copy it locally
+
+3.Open the local file with vscode and edit it
+
+4.Update the file and push it to the web page
+
+![6.1](./img/11.png)
+
+![6.2](./img/12.png)
+
+![6.3](./img/13.png)
+
 
 ------
+
 
 
 

@@ -1,4 +1,4 @@
-# <center>Happy journey of learning
+# <center>Happy Journey of Learning
 ***
 #
 
@@ -25,6 +25,6 @@
 #
 
 ## About us
->github小组账号😉：NexMaker-Fab/2023zjude-keyidu 
+>github小组账号😉：https://github.com/NexMaker-Fab/2023zjude-keyidu
 
 
