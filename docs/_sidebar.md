@@ -14,6 +14,8 @@
         - [How to 3D printing](3Dprinting/)
     - [5. CNC machine]
         - [Introduce of a cnc machine](cncmachine/)
+    - [6. Processing]
+        - [How to processing](processing/)   
 - ✔Final project
     - [Description](final%20project/description.md)
     - [How to design](final%20project/how%20to%20design.md) 
