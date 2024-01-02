@@ -79,6 +79,12 @@ The folder hierarchy is as follows:
 
 1.To open the home page, add the following in the index:**coverpage: true**
 
+![4.1](./img/2.1.png)
+
+Location of coverypage.md:
+
+![4.1](./img/2.2.png)
+
 2.Create a '_coverpage.md' file and write:
 
 ![4.1](./img/7.png)
@@ -91,6 +97,10 @@ There are four official themes that only need to be introduced in index to be us
 
 ![5.1](./img/8.png)
 
+We chose the theme "blue", so we added the following code to the index to run this page beautification:
+
+![11.1](./img/11.png)
+
 #### **Local setting**
 
 1.Download the github client and register
@@ -101,17 +111,69 @@ There are four official themes that only need to be introduced in index to be us
 
 4.Update the file and push it to the web page
 
-![6.1](./img/11.png)
+![6.1](./img/24.png)
 
-![6.2](./img/12.png)
+![6.2](./img/25.png)
 
-![6.3](./img/13.png)
-
+![6.3](./img/26.png)
 
 ------
 
 
+## **General interface layout**
 
+![5.1](./img/23.png)
+
+## **html document**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+ 
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '😃KEYIDU',
+      repo: '',
+      loadSidebar: true ,
+      subMaxLevel: 1 ,
+      loadNavbar: true,   //prepare for navbar
+      coverpage: true,
+      onlyCover: true,
+      loadNavbar: true,
+      
+      search: {
+        noData: {
+          '/': 'None!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': 'Search...'
+        }
+      }
+     
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+</body>
+</html>
+```
 
 ## Problem and solution
 
@@ -121,9 +183,7 @@ There are four official themes that only need to be introduced in index to be us
 
 In the early stage, the sidebar page could not jump due to the editing error of the level. After understanding the relationship between the relative levels, I corrected it.
 
-
 ![3.1](./img/4.png)
-
 2.Picture problem:
 The image cannot be loaded because the local image file address is directly added. After referring to the structure of other people's works, re-establish the picture management folder and change the picture address.
 
@@ -132,3 +192,4 @@ The image cannot be loaded because the local image file address is directly adde
 3.How to insert video:
 The same way you inserted the photo, but with the file suffix changed to 'mp4'. And limit the size of the video.
 ![6.1](./img/10.png)
+
