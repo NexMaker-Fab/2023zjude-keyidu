@@ -89,7 +89,7 @@ A 220Ω current limiting resistor is connected in series between the LED negativ
 
 ![1.1](./img/dlt.png)
 
-实物连接：
+Physical connection：
 
 ![1.1](./img/sw1.png)
 
@@ -335,7 +335,7 @@ double Detection(double data[],double baddata[],int datanum,int &badnum,int rule
 
 ### Video
 
-![2.2](./img/csbvideo.mp4)
+![2.2](./img/csbvideo.mp4 ':include :type=video controls width=80% hight=400px') 
 
 ## Arduino output experiment
 
@@ -420,9 +420,9 @@ Serial port input 2, led ON, serial port print "ON", Servo Motor  rotation to 90
 
 Serial input 4, led OFF, serial print "OFF", Servo Motor  to 180°
 
-![1.1](./img/dj6.mp4)
+![3.2](./img/csbvideo.mp4 ':include :type=video controls width=80% hight=400px') 
 
-![1.1](./img/dj7.mp4)
+![3.3](./img/dj7.mp4 ':include :type=video controls width=80% hight=400px')
 
 ### Serial monitor
 
@@ -624,7 +624,7 @@ void loop (void)
 
 LCD1602 Display character "Hello World!" The display contrast can be adjusted by adjusting the potentiometer
 
-![1.1](./img/lcd6.mp4)
+![4.1](./img/lcd6.mp4 ':include :type=video controls width=80% hight=400px')
 
 
 
