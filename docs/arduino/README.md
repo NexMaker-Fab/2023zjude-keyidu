@@ -329,6 +329,10 @@ double Detection(double data[],double baddata[],int datanum,int &badnum,int rule
 
 ![2.1](./img/csb.png)
 
+### Physical image
+
+![2.3](./img/csbsw.jpeg)
+
 ### Video
 
 ![2.2](./img/csbvideo.mp4)
