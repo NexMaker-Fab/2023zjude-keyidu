@@ -337,5 +337,294 @@ double Detection(double data[],double baddata[],int datanum,int &badnum,int rule
 
 ![2.2](./img/csbvideo.mp4)
 
+## Arduino output experiment
+
+### Experiment 1: Serial control steering gear and built-in LED light
+
+
+
+### Implementation functions are as follows
+
+Serial port input 2, led ON, serial port print "ON", Servo Motor  rotation to 90°.
+
+Serial input 4, led OFF, serial print "OFF", Servo Motor  to 180°
+
+### Servo motor Introduction
+
+Servos are motors that allow you to precisely control physical movement because they generally move to a position rather than continuously rotating. They are simple to connect and control because the motor driver is built right into them.
+
+Servos contain a small DC motor connected to the output shaft through gears. The output shaft drives a servo horn and is also linked to a potentiometer (pot).
+
+The potentiometer provides position feedback to the error amplifier in the control unit, which compares the current position of the motor to the target position.
+
+In response to the error, the control unit adjusts the motor’s current position so that it matches the desired position.
+
+In control engineering, this mechanism is known as a servomechanism, or servo for short. It is a closed-loop control system that uses negative feedback to adjust the motor’s speed and direction to achieve the desired result.
+
+### Connection description
+
+GND serves as a common ground for the motor and the logic.
+
+5V is a positive voltage that powers the servo.
+
+Control is an input for the control system.
+
+### Component
+
+Servo Motor , led, resistor, breadboard
+
+**Circuit connection：**
+
+![1.1](./img/dj3.jpg)
+
+![1.1](./img/dj2.png)
+
+### Arduino code
+
+```
+#include <Servo.h>
+int led4=4;       
+
+int led=13;         
+Servo myservo;//创建舵机对象
+
+void setup(){
+  myservo.attach(9, 500, 2500);
+  pinMode(led,OUTPUT);
+  pinMode(led4,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop(){
+  if(Serial.available()>0){
+    char c=Serial.read();
+    if(c=='2'){
+      digitalWrite(led,HIGH);
+      digitalWrite(led4,HIGH);
+      myservo.write(90);
+      Serial.println("ON");
+    }
+     else if(c=='4'){
+      digitalWrite(led,LOW);
+      digitalWrite(led4,LOW);
+      myservo.write(180);
+      Serial.println("OFF");
+    }
+  }
+}
+```
+
+### Final effect
+
+Serial port input 2, led ON, serial port print "ON", Servo Motor  rotation to 90°.
+
+Serial input 4, led OFF, serial print "OFF", Servo Motor  to 180°
+
+![1.1](./img/dj6.mp4)
+
+![1.1](./img/dj7.mp4)
+
+### Serial monitor
+
+![1.1](./img/dj3.jpg)
+
+
+------
+
+
+
+#### Experiment 2: LCD screen displays text
+
+
+
+### LCD1602 LCD screen introduction
+
+Also known as 1602 character liquid crystal, it is a kind of dot matrix liquid crystal module specially used to display letters, numbers, symbols, etc. It is composed of a number of 5X7 or 5X11 dot matrix character bits, each dot matrix character bit can display a character, there is a dot interval between each, there is also an interval between each line, which plays the role of character spacing and line spacing, and because of this, it can not display graphics well (with custom CGRAM, the display effect is not good). 1602LCD means that the display content is 16X2, that is, it can display two lines, 16 characters per line LCD module (display characters and numbers). Most of the character liquid crystals on the market are based on the HD44780 liquid crystal chip, and the control principle is exactly the same, so the control program written based on HD44780 can be easily applied to most of the character liquid crystals on the market.
+
+### Connection specification
+
+GND is the ground pin.
+
+VCC is the LCD’s power supply and is typically connected to 5 volts.
+
+Vo (LCD Contrast) pin controls the contrast of the LCD. Using a simple voltage divider network and a potentiometer, we can make precise contrast adjustments.
+
+RS (Register Select) pin is used to separate the commands (such as setting the cursor to a specific location, clearing the screen, etc.) from the data. The RS pin is set to LOW when sending commands to the LCD and HIGH when sending data.
+
+R/W (Read/Write) pin allows you to read data from or write data to the LCD. Since the LCD is only used as an output device, this pin is typically held low. This forces the LCD into WRITE mode.
+
+E (Enable) pin is used to enable the display. When this pin is set to LOW, the LCD ignores activity on the R/W, RS, and data bus lines; when it is set to HIGH, the LCD processes the incoming data.
+
+D0-D7 (Data Bus) pins carry the 8 bit data we send to the display. To see an uppercase ‘A’ character on the display, for example, we set these pins to 0100 0001 (as per the ASCII table).
+
+A-K (Anode & Cathode) pins are used to control the backlight of the LCD.
+
+### Component
+
+- Uno R3 development board
+- Supporting USB cable
+- Breadboard and connecting cable
+- LCD1602 LCD screen
+- 16Pin row
+- 10K potentiometer
+
+### Circuit connection
+
+![1.1](./img/lcd2.jpg)
+
+![1.1](./img/lcd3.png)
+
+### Connection test video
+
+If the connection is normal, turn the potentiometer, the brightness of the rectangular bar on the screen will also change, as follows:
+
+![1.1](./img/lcd3.mp4)
+
+### Arduino code
+
+```
+/*
+ * LCD1602_bit4
+ * LCD1602驱动显示Hello World
+ */
+ 
+int LCD1602_RS = 7;
+int LCD1602_EN = 6;
+int DB[4] = { 2, 3, 4, 5};
+
+/*
+ * LCD写命令
+ */
+void LCD_Command_Write(int command)
+{
+  int i, temp;
+  digitalWrite( LCD1602_RS, LOW);
+  digitalWrite( LCD1602_EN, LOW);
+
+  temp = command & 0xf0;
+  for (i = DB[0]; i <= 5; i++)
+  {
+    digitalWrite(i, temp & 0x80);
+    temp <<= 1;
+  }
+
+  digitalWrite( LCD1602_EN, HIGH);
+  delayMicroseconds(1);
+  digitalWrite( LCD1602_EN, LOW);
+
+  temp = (command & 0x0f) << 4;
+  for (i = DB[0]; i <= 5; i++)
+  {
+    digitalWrite(i, temp & 0x80);
+    temp <<= 1;
+  }
+
+  digitalWrite( LCD1602_EN, HIGH);
+  delayMicroseconds(1);
+  digitalWrite( LCD1602_EN, LOW);
+}
+
+/*
+ * LCD写数据
+ */
+void LCD_Data_Write(int dat)
+{
+  int i = 0, temp;
+  digitalWrite( LCD1602_RS, HIGH);
+  digitalWrite( LCD1602_EN, LOW);
+
+  temp = dat & 0xf0;
+  for (i = DB[0]; i <= 5; i++)
+  {
+    digitalWrite(i, temp & 0x80);
+    temp <<= 1;
+  }
+
+  digitalWrite( LCD1602_EN, HIGH);
+  delayMicroseconds(1);
+  digitalWrite( LCD1602_EN, LOW);
+
+  temp = (dat & 0x0f) << 4;
+  for (i = DB[0]; i <= 5; i++)
+  {
+    digitalWrite(i, temp & 0x80);
+    temp <<= 1;
+  }
+
+  digitalWrite( LCD1602_EN, HIGH);
+  delayMicroseconds(1);
+  digitalWrite( LCD1602_EN, LOW);
+}
+
+/*
+ * LCD设置光标位置
+ */
+void LCD_SET_XY( int x, int y )
+{
+  int address;
+  if (y == 0)    address = 0x80 + x;
+  else          address = 0xC0 + x;
+  LCD_Command_Write(address);
+}
+
+/*
+ * LCD写一个字符
+ */
+void LCD_Write_Char( int x, int y, int dat)
+{
+  LCD_SET_XY( x, y );
+  LCD_Data_Write(dat);
+}
+
+/*
+ * LCD写字符串
+ */
+void LCD_Write_String(int X, int Y, char *s)
+{
+  LCD_SET_XY( X, Y );    //设置地址
+  while (*s)             //写字符串
+  {
+    LCD_Data_Write(*s);
+    s ++;
+  }
+}
+
+void setup (void)
+{
+  int i = 0;
+  for (i = 2; i <= 7; i++)
+  {
+    pinMode(i, OUTPUT);
+  }
+  delay(100);
+  LCD_Command_Write(0x28);//显示模式设置4线 2行 5x7
+  delay(50);
+  LCD_Command_Write(0x06);//显示光标移动设置
+  delay(50);
+  LCD_Command_Write(0x0c);//显示开及光标设置
+  delay(50);
+  LCD_Command_Write(0x80);//设置数据地址指针
+  delay(50);
+  LCD_Command_Write(0x01);//显示清屏
+  delay(50);
+
+}
+
+void loop (void)
+{
+  LCD_Write_String(2, 0, "Hello World!");
+  LCD_Write_String(6, 1, "--TonyCode");
+}
+
+```
+
+
+
+### Achieve effect
+
+LCD1602 Display character "Hello World!" The display contrast can be adjusted by adjusting the potentiometer
+
+![1.1](./img/lcd6.mp4)
+
 
 
