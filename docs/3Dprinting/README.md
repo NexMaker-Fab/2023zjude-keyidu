@@ -83,6 +83,12 @@ Intensity setting
 
 **Post-processing - polishing**
 
+Preliminary grinding. Place the model on a stable workbench and gently grind the surface of the model with sandpaper (No. 180) to remove large particles and significant defects on the surface.
+
+The second step is to perform fine grinding. After preliminary grinding, there may still be some small dents and line marks. To address these issues, use finer sandpaper (400 grit) for grinding.
+
+After grinding:
+
 ![1.1](./img/9.png)
 
 

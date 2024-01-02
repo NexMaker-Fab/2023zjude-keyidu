@@ -124,7 +124,8 @@ We chose the theme "blue", so we added the following code to the index to run th
 
 ![5.1](./img/23.png)
 
-## **html document**
+
+## **index.html document**
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -174,6 +175,11 @@ We chose the theme "blue", so we added the following code to the index to run th
 </body>
 </html>
 ```
+**Page preview**
+
+![index1](./img/index1.png)
+
+![index2](./img/index2.png)
 
 ## Problem and solution
 
