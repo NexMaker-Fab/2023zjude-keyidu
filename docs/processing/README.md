@@ -148,22 +148,22 @@ void serialEvent(Serial myPort) {
 
 ** First connect the arduino, pay attention to the serial port of arduino and processing should be consistent **
 
-![1.1](./img/6.jpg)
+![2.1](./img/6.jpg)
 
-![1.1](./img/7.jpg)
+![2.2](./img/7.jpg)
 
 
 
 ** Code input, verify first, no error after upload, **
 
-![1.1](./img/8.jpg)
+![2.3](./img/8.jpg)
 
 
 ** Serial port monitor contents are as follows: **
 
 
-![1.1](./img/9.jpg)
+![2.4](./img/9.jpg)
 
 ** Then open processing, enter the code and run **
 
-![1.1](./img/10.jpg)
+![2.5](./img/10.jpg)
