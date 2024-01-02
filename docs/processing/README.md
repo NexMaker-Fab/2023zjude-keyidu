@@ -40,7 +40,9 @@
 
 The code is as follows：
 
-`int outputPin =2;              //接超声波Trig到数字D2脚
+```
+
+int outputPin =2;              //接超声波Trig到数字D2脚
 int inputPin =3;               //接超声波Echo到数字D3脚
 
 void setup()
@@ -62,7 +64,8 @@ void loop()
   Serial.print("The distance is :");      
   Serial.println(distance);
   delay(50);
-}`
+}
+```
 
 #### 2. Processing part: presenting the picture of the cart, controlling the cart away from or close to the wall
 
@@ -81,7 +84,8 @@ void loop()
 
   The code is as follows:
 
-`import processing.serial.*;
+```
+import processing.serial.*;
 
 Serial myPort;
 PImage electrocar;
@@ -136,3 +140,30 @@ void serialEvent(Serial myPort) {
     }
   }
 }`
+```
+
+
+
+### Overall operation process:
+
+** First connect the arduino, pay attention to the serial port of arduino and processing should be consistent **
+
+![1.1](./img/6.jpg)
+
+![1.1](./img/7.jpg)
+
+
+
+** Code input, verify first, no error after upload, **
+
+![1.1](./img/8.jpg)
+
+
+** Serial port monitor contents are as follows: **
+
+
+![1.1](./img/9.jpg)
+
+** Then open processing, enter the code and run **
+
+![1.1](./img/10.jpg)
