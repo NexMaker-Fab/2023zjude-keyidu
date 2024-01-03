@@ -82,7 +82,7 @@ A laser cutting machine is a device that utilizes a laser beam to precisely cut 
     
     a. Upload the design in DXF format.
 
-    ![4](./img/4.jpeg)
+    ![4](./img/4.png)
 
     b. Set power and speed rates.
 
