@@ -160,7 +160,7 @@ Location of coverypage.md:
 
 2.Create a '_coverpage.md' file and write:
 
-![4.1](./img/7.png)
+![4.2](./img/34.png)
 
 ```
 # Happy journey of learning
