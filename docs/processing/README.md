@@ -6,6 +6,7 @@
    - Used to measure the distance to an obstacle in front of you, determining the distance by sending a sound wave and receiving its return.
 2. **Cart Picture**:
    - Represents a graphical representation of an electric car moving in the Processing programme.
+  ![1.1](./img/diandongche.jpg) 
 3. **Arduino & Processing**:
    - Arduino is used to control the ultrasonic sensor and send the data to the computer.
    - Processing is used to receive the distance data sent by Arduino and graphically represent the movement of the cart picture.
@@ -142,28 +143,35 @@ void serialEvent(Serial myPort) {
 }`
 ```
 
+**The processing code and image folders are as follows**
+
+![1.1](./img/11.png)
+
+And put "diandongche.jpg" in the "data" folder
 
 
 ### Overall operation process:
 
-** First connect the arduino, pay attention to the serial port of arduino and processing should be consistent **
+**First connect the arduino, pay attention to the serial port of arduino and processing should be consistent**
 
-![2.1](./img/6.jpg)
+![1.1](./img/6.jpg)
 
-![2.2](./img/7.jpg)
-
-
-
-** Code input, verify first, no error after upload, **
-
-![2.3](./img/8.jpg)
+![1.1](./img/7.png)
 
 
-** Serial port monitor contents are as follows: **
+
+**Code input, verify first, no error after upload**
+
+![1.1](./img/8.png)
 
 
-![2.4](./img/9.jpg)
+**Serial port monitor contents are as follows:**
 
-** Then open processing, enter the code and run **
 
-![2.5](./img/10.jpg)
+![1.1](./img/9.png)
+
+**Then open processing, enter the code and run**
+
+
+![1.1](./img/10.png)
+

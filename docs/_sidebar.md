@@ -9,13 +9,15 @@
     - [2. CAD]
         - [How to build CAD model](cad/)
     - [3. Arduino]
-        - [How to build a light experiment](arduino/)
+        - [How to build an Arduino experiment](arduino/)
     - [4. 3D printing]
         - [How to 3D printing](3Dprinting/)
     - [5. CNC machine]
         - [Introduce of a cnc machine](cncmachine/)
     - [6. Processing]
-        - [How to processing](processing/)   
+        - [How to processing](processing/)
+    - [7.Computer-controlled cutting]     
+        - [How to computer-controlled cutting](laserCutting/)  
 - ✔Final project
     - [Description](final%20project/description.md)
     - [How to design](final%20project/how%20to%20design.md) 
