@@ -31,13 +31,21 @@ A laser cutting machine is a device that utilizes a laser beam to precisely cut 
     a. Line Width: Consider the diameter of the laser beam in the design, ensuring that the lines are wide enough to accommodate the thermal effects and laser beam diameter during cutting. Typically, the recommended line width is not less than twice the diameter of the laser beam.
 
     b. Material Selection: Different materials have varying adaptabilities to laser cutting. Ensure the chosen material is suitable for laser cutting and understand its melting point and cutting characteristics.
+    
     c. Material Thickness: Laser cutting machines have limitations on the maximum cutting thickness for different materials. Ensure the designed material thickness is within the specifications of the laser cutting machine.
+    
     d. Hole Diameter and Spacing: When designing holes, consider the laser beam diameter, material type, and thickness. Too small holes may result in inaccurate cutting, while excessively large holes may compromise material strength.
+    
     e. Internal and External Contours: Design of internal and external contours should consider factors such as cutting speed and focal length. Ensure there are no sharp internal corners in the design to avoid focus-related issues.
+    
     f. Marking and Labeling: If marking or engraving text, icons, etc., on the material is needed, ensure these design elements are clearly visible during the cutting process.
+   
     g. File Format and Layer Settings: Use compatible file formats (usually vector graphics) and ensure correct layer settings. Separate cutting and non-cutting lines, creating different layers for various cutting tasks.
+    
     h. Focus Adjustment: Adjust the focus position of the laser cutting machine according to the type and thickness of the cutting material. Correct focus positioning helps achieve clear and precise cutting.
+   
     i. Avoiding Reflections: Avoid surfaces in the design that may cause reflections, as this can interfere with the laser cutting machine's sensors and optical systems.
+   
     j. Optimize Nesting: For batch production, optimizing nesting can minimize material waste and enhance production efficiency.
 
 2. Types of Cuts:
@@ -54,7 +62,7 @@ A laser cutting machine is a device that utilizes a laser beam to precisely cut 
     
     f. Support Structures: When cutting large-area materials, design suitable support structures to prevent material bending or displacement due to gravity.
 
-**Practical Design of Laser Cutting Machine**
+## Practical Design of Laser Cutting Machine
 
 1. Adjustment of Speed, Power, and Cutting Practice:
     
@@ -90,7 +98,7 @@ A laser cutting machine is a device that utilizes a laser beam to precisely cut 
 
     ![8](./img/8.jpeg)
 
-Final Results:
+3. Final Results:
 
 ![12](./img/12.jpeg)
 
