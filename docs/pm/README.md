@@ -49,9 +49,45 @@ https://typora.io/
 5.Open your PC browser and visit the local port on your PC [http://localhost:3000](http://localhost:3000/)to open the home page of Create Project
 
 #### **Go to VS Code**
+
 Open the project folder with VS code in the following directory and edit the 'README.md' file.
 
 ![2.1](./img/3.png)
+
+#### **document with markdown including title,header,picture,link**
+
+title
+
+```
+
+# 一级标题
+## 二级标题
+### 三级标题
+
+``` 
+
+header
+
+```
+
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+
+```
+
+picture
+
+``` 
+![A picture](./img/2.png)
+
+```
+
+link
+
+```
+[A link](http://localhost:3000/)
+
+```
 
 
 
@@ -124,8 +160,16 @@ We chose the theme "blue", so we added the following code to the index to run th
 
 ![5.1](./img/23.png)
 
+## **Collaborator setting**
+
+![home](./img/home.png)
+
+![invite](./img/invite.png)
+
+![role](./img/role.png)
 
 ## **index.html document**
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -174,6 +218,7 @@ We chose the theme "blue", so we added the following code to the index to run th
 
 </body>
 </html>
+
 ```
 **Page preview**
 

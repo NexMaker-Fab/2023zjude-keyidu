@@ -64,6 +64,33 @@ Create a new contact set-select the component-preview the animation model.
 
 ![5.4](./img/12.png)
 
+#### **Plug-in use：Calling external plugins**
+
+Find plugins
+
+![cj](./img/image1.png)
+
+Plugin Details Description
+
+![cj1](./img/cjdetail.png)
+
+![cj2](./img/cj1.png)
+
+Plugin loading
+
+![cj3](./img/cjzr.jpeg)
+
+Plugin call
+
+![cj4](./img/cjdy.png)
+
+Plugin usage
+
+![cj5](./img/cjsy.png)
+
+![cj5](./img/cjsy2.png)
+
+![cj5](./img/cjsy3.png)
 
 ### **6. Overall effect preview of this part**
 
