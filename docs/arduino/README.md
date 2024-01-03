@@ -62,6 +62,7 @@ Each platform has its own unique advantages and which one to choose depends on o
 - **LED flashing ** : Connect the positive LED to the digital pin of the Arduino and the negative LED to GND (ground) through a resistor.
 - **Read button status  :** Connect one end of the button to the digital pin and the other end to GND, read the status through 'digitalRead'.
 
+------
 
 ##  Flow lamp experiment
 
@@ -163,8 +164,9 @@ Arduino code interface：
 
 #### Demo video
 
-![1.1](./img/ys.mp4)
+![1.1](./img/ys.mp4 ':include :type=video controls width=80% hight=400px')
 
+------
 
 ##  Arduino Input
 
@@ -420,8 +422,6 @@ Serial port input 2, led ON, serial port print "ON", Servo Motor  rotation to 90
 
 Serial input 4, led OFF, serial print "OFF", Servo Motor  to 180°
 
-![3.2](./img/csbvideo.mp4 ':include :type=video controls width=80% hight=400px') 
-
 ![3.3](./img/dj7.mp4 ':include :type=video controls width=80% hight=400px')
 
 ### Serial monitor
@@ -433,7 +433,7 @@ Serial input 4, led OFF, serial print "OFF", Servo Motor  to 180°
 
 
 
-#### Experiment 2: LCD screen displays text
+## Experiment 2: LCD screen displays text
 
 
 
