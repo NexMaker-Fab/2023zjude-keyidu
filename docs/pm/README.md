@@ -38,13 +38,22 @@ https://typora.io/
 
 2.After the installation is complete, open the CMD command line window (win-dows platform) and enter 'node' to run 'Node.js'. The following message indicates that the installation is successful:
 
-![1.1](./img/1.png)
+```
+C:\Windows\System32\node
+Welcome to Node.js v19.1.0.
+Type ".help" for more information.
+>
+```
 
 3.Then install docsify 'and continue typing in the CMD command line window:**npm i docsify-cli -g**
 
 4.After the installation is successful, start initializing the docsify project
 
-![1.2](./img/2.png)
+```
+C:\Users\myxc\Desktop>docsify init ./docs
+Initialization succeeded! Please run docsify serve ./docs
+```
+
 
 5.Open your PC browser and visit the local port on your PC [http://localhost:3000](http://localhost:3000/)to open the home page of Create Project
 
@@ -95,15 +104,43 @@ link
 
 1.The sidebar setup must first create a '_sidebar.md' file and then write:
 
-![3.1](./img/4.png)
+![3.3](./img/33.png)
 
 2.Then add Settings in 'index.html' :
 
-![3.2](./img/5.png)
+```
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '😃KEYIDU',
+      repo: '',
+      loadSidebar: true ,
+    }
+
+```
 
 3.Write the directory link in the _sidebar.md file:
 
-![3.3](./img/4.png)
+```
+<!-- docs/_sidebar.md -->
+
+- [✔Team introduce](README.md)
+
+- ✔Daily homework
+    - [1. PM]
+        - [How to build web](pm/)
+    - [2. CAD]()
+    - [3. Arduino]()
+         - [processing](processing/)
+    
+- ✔Final project
+    - [Description](final%20project/description.md)
+    - [How to design](final%20project/how%20to%20design.md) 
+    - [How to make](final%20project/how%20to%20make.md)
+
+```
+
 
 The folder hierarchy is as follows:
 
@@ -124,6 +161,20 @@ Location of coverypage.md:
 2.Create a '_coverpage.md' file and write:
 
 ![4.1](./img/7.png)
+
+```
+# Happy journey of learning
+>
+< img src="./img0/ke1.png" alt="keyidu" style="zoom:10%;" />
+
+# 设计工程学
+
+> All by keyidu👋
+
+[开始学习](./README.md)
+
+```
+
 
 #### **Page beautification**
 
