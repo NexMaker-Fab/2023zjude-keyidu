@@ -470,7 +470,7 @@ A-K (Anode & Cathode) pins are used to control the backlight of the LCD.
 
 ### Circuit connection
 
-![1.1](./img/lcd2.jpg)
+![lcd2](./img/lcd2.jpg)
 
 ![1.1](./img/lcd3.png)
 
@@ -478,7 +478,7 @@ A-K (Anode & Cathode) pins are used to control the backlight of the LCD.
 
 If the connection is normal, turn the potentiometer, the brightness of the rectangular bar on the screen will also change, as follows:
 
-![1.1](./img/lcd3.mp4)
+![1.1](./img/lcd3.mp4 ':include :type=video controls width=80% hight=400px')
 
 ### Arduino code
 
