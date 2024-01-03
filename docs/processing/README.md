@@ -6,6 +6,7 @@
    - Used to measure the distance to an obstacle in front of you, determining the distance by sending a sound wave and receiving its return.
 2. **Cart Picture**:
    - Represents a graphical representation of an electric car moving in the Processing programme.
+   
   ![1.1](./img/diandongche.jpg) 
 3. **Arduino & Processing**:
    - Arduino is used to control the ultrasonic sensor and send the data to the computer.
