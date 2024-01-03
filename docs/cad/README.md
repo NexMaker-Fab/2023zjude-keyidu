@@ -92,8 +92,55 @@ Plugin usage
 
 ![cj5](./img/cjsy3.png)
 
-### **6. Overall effect preview of this part**
+#### **6. Overall effect preview of this part**
 
 ![5.4](./img/13.gif)
 
+## CAD Software introduction
+
+**Introduction**
+
+SketchUp is a 3D modeling software that allows users to create and manipulate 3D models of buildings, landscapes, furniture, and other objects. It is commonly used in architecture and interior design.
+
+SketchUp is owned by Trimble Inc. The program is currently available as a web-based application, SketchUp Free, and three paid subscriptions, SketchUp Shop, SketchUp Pro, and SketchUp Studio, each with increasing functionality.
+
+The program includes drawing layout functionality, surface rendering in different "styles", and enables placement of its models within Google Earth.
+
+The program includes drawing layout functionality, surface rendering in different "styles", and enables placement of its models within Google Earth.
+
+![cad](./img/cad1.png)
+
+![cad](./img/cad2.png)
+
+![cad](./img/cad3.png)
+
+**Tool**
+
+1. Drawing tools
+
+Straight Line - Used to draw a straight line.
+
+Arc - Creates an arc with two points and one drag, or a third click.
+
+Freehand Drawing - Allows the user to draw freely to create a freehand image.
+
+Circles - Circles can be drawn by clicking to determine the center of the circle and defining the diameter.
+
+Polygon - Regular polygons can be created in the same way as circles: click and drag.
+
+Rectangle - Defining a rectangle can be done by adjusting and entering values for its length and width.
+
+Follow me - can be created along the path of a template (or by removing template-sized space from it)
+
+3D Text - Allows the user to create 3D text with customized font libraries, font sizes and formats.
+
+2. Editing tools
+
+Push/pull - Grabbing a 2D surface and then pushing or stretching it to make it 3D is emphasized by Google in the tutorial as the main highlight of Google SketchUp.
+
+Rotate - Rotate specific geometric components using a protractor.
+
+Move - Select and move (duplicate) objects in three different directions or in a combination of directions.
+
+The rest of the useful tools can be found in the [SketchUp website] (https://www.sketchup.com/zh-CN).
 ------

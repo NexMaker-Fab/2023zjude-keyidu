@@ -108,6 +108,8 @@ The field of Human-Computer-Interaction (HCI) has been consistently utilizing ki
 
 ![case3](./img/case3.png)
 
+![case](./img/research.png)
+
 **Video introduction**
 
 ![video](./img/intro.mp4 ':include :type=video controls width=80% hight=400px')
